@@ -33,8 +33,11 @@
                         <p class="card-text">No Projeto Monalisa, criei uma arte interativa usando p5.js, combinando
                             formas geométricas, cores e posicionamento no plano cartesiano. Inspirado no efeito visual
                             da Monalisa, faremos com que os olhos de um rosto sigam o cursor do mouse, explorando
-                            fundamentos de programação visual e interação.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                            fundamentos de programação visual e interação.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal1">Veja
+                            o
+                            projeto</button>
                     </div>
                 </div>
             </div>
@@ -48,7 +51,9 @@
                             a distância entre o mouse e o ponto. Quanto mais perto chegamos, menor fica o círculo na
                             tela ou seja, estamos “quentes”. Se estivermos longe, o círculo cresce estamos “frios”. É
                             como um jogo de esconde-esconde com dicas visuais!</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal2">Veja
+                            o
+                            projeto</button>
                     </div>
                 </div>
             </div>
@@ -61,7 +66,9 @@
                             JavaScript e a biblioteca p5.js. Cada jogador controla um personagem com uma tecla do
                             teclado, e quem apertar mais rápido faz seu personagem correr mais. Ganha quem chegar
                             primeiro na linha de chegada!</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal3">Veja
+                            o
+                            projeto</button>
                     </div>
                 </div>
             </div>
@@ -70,14 +77,120 @@
 
     </main>
 
-<footer class="container py-5">
-<h2>Entre em contato</h2>
-<div>
-     <a href="">Github</a>
-</div>
-<p class="my-4">© copyright 2025. Produzido por Samira A. Garuti</p>
+    <!--Modal 1-->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Monalisa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O Projeto Monalisa Interativa tem como objetivo criar uma arte visual programada, utilizando a
+                        biblioteca p5js, que combina formas geométricas, cores, coordenadas no plano cartesiano e
+                        interação com o mouse. Inspirado no famoso efeito visual do quadro da Monalisa, o projeto simula
+                        um rosto cujos olhos acompanham o movimento do cursor do mouse, criando uma sensação de que o
+                        rosto está "olhando" diretamente para o usuário, independentemente da posição do cursor na tela.
+                    </p>
 
-</footer>
+                    <p> A tela do p5.js funciona como um plano cartesiano bidimensional, onde a coordenada (0, 0)
+                        representa o canto superior esquerdo da tela. A partir dessa referência, todas as formas são
+                        posicionadas no espaço com valores de x (horizontal) e y (vertical). No centro da tela é
+                        desenhado um rosto composto por formas geométricas simples: um círculo ovalado representa a
+                        cabeça, duas elipses formam os olhos, outra elipse forma o nariz e um arco representa a boca.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="">Ver projeto ao vivo</a>
+                    <a href="">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quente frio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Neste projeto, criamos um jogo simples e interativo usando a biblioteca p5.js, no qual o
+                        objetivo é encontrar um ponto escondido na tela. A principal mecânica do jogo é baseada no
+                        Teorema de Pitágoras: o programa calcula a distância entre a posição atual do cursor do mouse e
+                        a posição fixa do ponto oculto. Com base nessa distância, o jogo fornece uma dica visual um
+                        círculo que aparece na posição do mouse e varia de tamanho conforme a proximidade do jogador em
+                        relação ao ponto secreto. </p>
+
+                    <p>Se o jogador estiver muito longe do ponto escondido, o círculo fica maior, indicando que está
+                        “frio”. À medida que se aproxima, o círculo diminui, sinalizando que está “quente”. Essa lógica
+                        transforma a distância entre dois pontos em um sistema visual de pistas, tornando o jogo
+                        intuitivo e divertido. O jogador precisa explorar a tela, movendo o mouse e observando o tamanho
+                        do círculo para tentar adivinhar onde está o alvo.</p>
+
+                    <p> Quando o jogador clica suficientemente perto do ponto escondido dentro de uma pequena margem
+                        de tolerância o jogo reconhece que o ponto foi encontrado e exibe uma mensagem de sucesso,
+                        indicando que o desafio foi completado. Esse projeto é ideal para introduzir conceitos básicos
+                        de matemática e programação visual.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="">Ver projeto ao vivo</a>
+                    <a href="">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Neste projeto, desenvolvemos um jogo de corrida interativo com quatro personagens, utilizando
+                        JavaScript e a biblioteca p5.js. A proposta do jogo é simples e divertida: cada jogador controla
+                        um personagem na corrida pressionando uma tecla específica do teclado. Quanto mais rápido o
+                        jogador apertar sua tecla, mais rápido seu personagem avança na pista. O primeiro que alcançar a
+                        linha de chegada vence a corrida.</p>
+
+                    <p>O jogo funciona com base em eventos de teclado. Cada personagem é associado a uma tecla (por
+                        exemplo, A, S, K e L), e a cada vez que essa tecla é pressionada, o personagem correspondente
+                        avança uma certa quantidade de pixels para frente. A corrida é exibida visualmente na tela, com
+                        cada personagem ocupando uma faixa da pista, como em uma competição esportiva. A linha de
+                        chegada é representada por uma linha vertical no lado direito da tela.</p>
+
+                    <p>Quando um personagem alcança ou ultrapassa essa linha, o jogo detecta o vencedor e exibe uma
+                        mensagem indicando quem ganhou. A partir desse ponto, o jogo pode parar ou oferecer a opção de
+                        reinício.</p>
+
+                    <p> Durante a construção do projeto, aprendemos a trabalhar com detecção de teclas (keyPressed()),
+                        movimentação de objetos na tela, controle de fluxo com estruturas condicionais e manipulação de
+                        variáveis para controlar a posição dos personagens. Também exploramos aspectos visuais como
+                        cores, formas e layout para tornar o jogo mais atrativo. </p>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="">Github</a>
+        </div>
+        <p class="my-4">© copyright 2025. Produzido por Samira A. Garuti</p>
+
+    </footer>
 
 </body>
 
